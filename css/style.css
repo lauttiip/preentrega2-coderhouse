@@ -14,3 +14,346 @@
     width: 10.75rem;
     height: 15.75rem;
 }
+
+
+/* pages Nosotros */
+
+
+.bodyContainer{
+    display: grid;
+    width: 100%;
+    height: 140vh;
+    grid-template-rows: 6% auto 20%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.headerContainer{
+    grid-area: header;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9; 
+    padding: 10px 20px;
+    height: 100%;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    height:auto;
+    color: #325180;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    align-self: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #325180;
+    font-size: 1.5rem;
+    
+}
+
+.nav-links li a:hover{
+    color: #1f30ca; 
+}
+
+
+.mainContainer{
+    grid-area: main;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    ;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2.25rem;
+
+
+}
+
+.mainContainer section{
+    height: 90%;
+}
+
+.card1{
+    grid-area: card1;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 80%;
+    align-items: center;   
+    gap: 10px;
+    border-right:  3px  solid rgb(38, 56, 158);
+    border-left:  3px  solid rgb(38, 56, 158);
+    padding: 0 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card1 div{
+    width: 80%;
+    height: 50%;
+
+}
+
+.card1 .imgCard{
+    width: 40%;
+    height: 90%;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: -1px -1px 5px 1px  #325180;
+
+}
+
+.infoCard{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCard h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #325180;
+}
+
+.infoCard p{
+    width: 65%;
+    color: rgb(110, 108, 108);
+    font-size: 1.2rem;
+}
+
+.card2{
+    grid-area: card2;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 80%;
+    align-items: center;   
+    gap: 10px;
+    border-right:  3px  solid rgb(38, 56, 158);
+    border-left:  3px  solid rgb(38, 56, 158);
+    padding: 0 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card2 div{
+    width: 80%;
+    height: 50%;
+
+}
+
+.card2 .imgCard{
+    width: 40%;
+    height: 90%;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: -1px -1px 5px 1px  #325180;
+    order: 2;
+
+}
+
+.infoCard{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.infoCard h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #325180;
+}
+
+.infoCard p{
+    width: 65%;
+    color: rgb(110, 108, 108);
+    font-size: 1.2rem;
+}
+
+.card3{
+    grid-area: card3;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 80%;
+    align-items: center;   
+    gap: 10px;
+    border-right:  3px  solid rgb(38, 56, 158);
+    border-left:  3px  solid rgb(38, 56, 158);
+    padding: 0 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card3 div{
+    width: 80%;
+    height: 50%;
+
+}
+
+.card3 .imgCard{
+    width: 40%;
+    height: 90%;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: -1px -1px 5px 1px  #325180;
+
+}
+
+.infoCard{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoCard h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #325180;
+}
+
+.infoCard p{
+    width: 65%;
+    color: rgb(110, 108, 108);
+    font-size: 1.2rem;
+}
+
+.imgCard img{
+    width: 100%;
+    height: 100%;
+}
+
+.bodyContainer footer{
+    height: 100%;
+    width: 100%;
+}
+
+.footerContainer{
+    grid-area: footer;
+    height: 100%;
+    background-color: #D9D9D9;
+    color: #525252;
+    padding: 10px 0;
+
+}
+
+.containerCards{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.containerCards div{
+    width: 15rem;
+    height: 11rem;
+}
+
+.footer-izq{
+    border: 2px solid white;
+    padding: 25px 7px ;
+    
+
+}
+
+.footer-izq h4{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-center{
+    border: 2px solid white;
+    padding: 25px 7px ;
+
+}
+
+.footer-center h4{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-center ul li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer-center a{
+    color: #2A37AD;
+    text-decoration: none;
+}
+
+.footer-der{
+    border: 2px solid white;
+    padding: 25px 7px ;
+
+}
+
+.footer-der h4{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-der ul li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer-der a{
+    color: #2A37AD;
+    text-decoration: none;
+}
