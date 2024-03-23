@@ -85,12 +85,25 @@ body{
     color: #325180;
     font-size: 1rem;
     border-bottom: 1px solid #325180;
-
+    padding: 0 2px;
 }
 
 .nav-links li a:hover{
-    color: #1f30ca; 
+    color: #1f30ac; 
+    border-left: 2px solid #1f30ca;
+    border-right: 2px solid #1f30ca; 
 }
+
+.infoCard h2::selection {
+    color: #b6b3b3;
+    background-color: #1a1d38;
+}
+
+.infoCard p::selection {
+    color: #b6b3b3;
+    background-color: #1a1d38;
+}
+
 
 
 .mainContainer{
@@ -432,9 +445,11 @@ body{
 }
 
 .navColor li a:hover{
-    color: #D6BC42
-    ; 
+    color: #D6BC42;
+    border-left: 2px solid #D6BC42;
+    border-right: 2px solid #D6BC42; 
 }
+
 
 .logoColor a{
     color: #D4CC9F;
@@ -493,7 +508,7 @@ select {
 
 
 
-button {
+.buttonForm {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -503,7 +518,7 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.buttonForm:hover {
     background-color: #D4CC9F;
 }
 
@@ -573,6 +588,7 @@ button:hover {
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
+        justify-content: space-evenly;
     }
 
     .card1{
@@ -656,9 +672,7 @@ button:hover {
 }
 
 @media (max-width: 375px){
-    .nav-links{
-        justify-content: space-around;
-    }
+   
     .nav-links li a{
         font-size: 0.8rem;
     }
