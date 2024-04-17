@@ -1,0 +1,21 @@
+/*utilities*/
+/*bases*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #A79277;
+  width: 100%; }
+
+body {
+  font-family: "Sedan", serif; }
+
+/*layout*/
+.imgCss {
+  width: 10.75rem;
+  height: 15.75rem; }
+
+/*components*/
+/*mediaQuerrys*/
